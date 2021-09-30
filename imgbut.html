@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="button" value="SAD" id="btn1" onclick="fnsad()" >
+        <input type="button" value="smile" id="btn2" onclick="fnsmile()">
+        <input type="button" value="angry" id="btn3" onclick="fnangry()" >
+        <img src="C:\Users\home\Desktop\exam\images\smile.jpg" hidden id="img1">
+        <img src="C:\Users\home\Desktop\exam\images\angry.jpg" hidden id="img2">
+        <img src="C:\Users\home\Desktop\exam\images\sad.jpg" hidden id="img3">
+
+
+
+
+    </form>
+    <script>
+    function fnsmile(){
+        document.getElementById("img1").hidden=false;
+        document.getElementById("btn1").hidden=true;
+        document.getElementById("btn3").hidden=true;
+        document.getElementById("btn2").hidden=true;
+
+    }
+    function fnsad(){
+        document.getElementById("img3").hidden=false;
+        document.getElementById("btn1").hidden=true;
+        document.getElementById("btn3").hidden=true;
+        document.getElementById("btn2").hidden=true;
+
+    }
+    function fnangry(){
+        document.getElementById("img2").hidden=false;
+        document.getElementById("btn1").hidden=true;
+        document.getElementById("btn3").hidden=true;
+        document.getElementById("btn2").hidden=true;
+
+    }
+    </script>
+</body>
+</html>
